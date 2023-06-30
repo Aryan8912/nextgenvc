@@ -6,8 +6,9 @@ import { BsFillBookmarkCheckFill, BsFillMicFill, BsJournalBookmarkFill } from 'r
 const Work = () => {
   return (
     <section>
+      <div className="">
       <h1 className="text-center text-3xl font-bold my-10">How it Works</h1>
-      <div className="flex flex-wrap items-center">
+      <div className="flexCenter">
         <div className="w-full lg:w-1/2 p-8 px-10">
           {/* Left side image */}
           <Image
@@ -20,9 +21,9 @@ const Work = () => {
             blurDataURL="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAQAAAC1HAwCAAAAC0lEQVR42mNkYAAAAAYAAjCB0C8AAAAASUVORK5CYII="
           />
         </div>
-        <div className="w-full lg:w-1/2 p-8">
+        <div className="w-full lg:w-1/2 p-8 ">
           {/* Right side boxes */}
-          <div className="mx-auto gap-4 md:gap-6 grid grid-cols-2">
+          <div className=" projects-grid-box ">
             {/* Box 1 */}
             <div className="border border-dashed border-gray-800 w-64 h-80 rounded-xl p-4 text-center mb-6">
               <div className="w-12 h-12 bg-gray-500 rounded-full flex items-center justify-center">
@@ -80,6 +81,7 @@ const Work = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );
