@@ -1,11 +1,13 @@
 import React from 'react';
 import Image from 'next/image';
+import {BsStars} from 'react-icons/bs';
 
 const HeroSection = () => {
   return (
-    <section className=" w-full h-screen">
+    <section className=" w-full h-screen pt-20 mb-24">
       <div className="container mx-auto px-4 py-8 flex items-center justify-center">
         <div className="w-full md:w-2/5">
+          <BsStars/>
           <div className="relative">
             <Image
               src="/16.png"
@@ -15,13 +17,14 @@ const HeroSection = () => {
             />
           </div>
         </div>
-        <div className="absolute top-20 right-78 px-4 py-2 hidden md:block">
-  <h3 className="text-lg font-bold text-gray-800 rounded-lg shadow-md">Right Top Box</h3>
+        <BsStars/>
+        <div className="absolute top-20 right-78 px-8 right-48 py-2 hidden md:block">
+  <h3 className="text-gray-800 font-light rounded-lg shadow-md">Save <b className="text-green-700">10000 Hours</b> of Research</h3>
   <div>
     <Image
       src="/15.png"
       alt="service-7"
-      width={100}
+      width={80}
       height={100}
     />
   </div>
@@ -41,7 +44,7 @@ const HeroSection = () => {
   </div>
 </div>
 
-        <div className="absolute bottom-0 left-0 px-4 py-2 hidden md:block">
+        <div className="absolute bottom-[-118px] left-72 px-4 py-2 hidden md:block">
         <div className="">
           <Image
             src="/14.png"
@@ -50,8 +53,9 @@ const HeroSection = () => {
             height={100}
             />
         </div>
-<h3 className="text-lg font-bold text-gray-800 rounded-lg shadow-md">Left Bottom Box</h3>
+<h3 className="text-lg font-bold text-gray-800 rounded-lg shadow-md"><b className="text-green-700">24*7</b> Support</h3>
 </div>
+<BsStars/>
         <div className="w-full md:w-2/5">
           <div className="relative">
             <Image
